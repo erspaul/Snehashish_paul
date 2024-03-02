@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Offers</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFD700; /* Light orange background color */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      height: 100vh; /* Set the body height to full viewport height */
+    }
+
+    /* Add any additional styling for your content here */
+    
+    .features_area {
+      padding: 50px 0; /* Add padding to the features area for better spacing */
+    }
+
+    .main_title {
+      margin-bottom: 30px; /* Adjust margin for better spacing */
+    }
+
+    .feature_item {
+      background-color: #ffffff; /* White background for each feature item */
+      padding: 20px; /* Add padding to each feature item for better spacing */
+      margin-bottom: 20px; /* Adjust margin for better spacing between feature items */
+      text-align: center;
+    }
+
+    .feature_item h2 {
+      text-decoration: underline;
+    }
+  </style>
+
+  <!-- Additional script for handling click events -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Function to navigate to a specific URL based on the clicked item
+      function navigateTo(url) {
+        window.location.href = url;
+      }
+
+      // Get the elements for A, B, C, D
+      var elementA = document.getElementById("serviceA");
+      var elementB = document.getElementById("serviceB");
+      var elementC = document.getElementById("serviceC");
+      var elementD = document.getElementById("serviceD");
+
+      // Add click event listeners to each element
+      elementA.addEventListener("click", function () {
+        navigateTo("https://www.shohoz.com/");
+      });
+
+      elementB.addEventListener("click", function () {
+        navigateTo("https://www.redbus.in/");
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <section class="features_area">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="main_title">
+            <div style="display: flex; justify-content: center;">
+              <h2>Service Offers</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row feature_inner">
+        <div class="col-lg-3 col-md-6">
+          <div class="feature_item" id="serviceA">
+            <h2><u>Bangladesh</u></h2>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature_item" id="serviceB">
+            <h2><u>India</u></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your existing footer and other content -->
+
+</body>
+
+</html>

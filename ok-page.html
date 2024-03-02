@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Offers</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #800080; /* Dark purple background color */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      height: 100vh; /* Set the body height to full viewport height */
+    }
+
+    /* Add any additional styling for your content here */
+    
+    .features_area {
+      padding: 50px 0; /* Add padding to the features area for better spacing */
+    }
+
+    .main_title {
+      margin-bottom: 30px; /* Adjust margin for better spacing */
+      color: #ffffff; /* Set text color to white */
+    }
+
+    .feature_item {
+      background-color: #663399; /* Dark purple background color for each feature item */
+      padding: 20px; /* Add padding to each feature item for better spacing */
+      margin-bottom: 20px; /* Adjust margin for better spacing between feature items */
+      text-align: center;
+      color: #ffffff; /* Set text color to white */
+    }
+
+    .feature_item img {
+      width: 100px; /* Adjust image width as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Add margin below the image */
+    }
+
+    .feature_item h3, .feature_item h4 {
+      font-size: 18px; /* Adjust font size for headings */
+      margin-bottom: 10px; /* Add margin below headings */
+    }
+
+    .feature_item p {
+      font-size: 14px; /* Adjust font size for paragraphs */
+    }
+  </style>
+
+  <!-- Additional script for handling click events -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Function to navigate to a specific URL based on the clicked item
+      function navigateTo(url) {
+        window.location.href = url;
+      }
+
+      // Get the elements for A, B, C, D
+      var elementA = document.getElementById("serviceA");
+      var elementB = document.getElementById("serviceB");
+      var elementC = document.getElementById("serviceC");
+      var elementD = document.getElementById("serviceD");
+
+      // Add click event listeners to each element
+      elementA.addEventListener("click", function () {
+        navigateTo("CU.html");
+      });
+
+      elementB.addEventListener("click", function () {
+        navigateTo("RUET.html");
+      });
+
+      elementC.addEventListener("click", function () {
+        navigateTo("RUB.html");
+      });
+
+      elementD.addEventListener("click", function () {
+        navigateTo("path/to/welcome-page.html");
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <section class="features_area">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="main_title">
+            <div style="display: flex; justify-content: center;">
+              <h2>Service Offers</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row feature_inner">
+        <div class="col-lg-3 col-md-6">
+          <div class="feature_item" id="serviceA">
+            <img src="cu.jpg" alt="">
+            <h3>Chandigarh University</h3>
+            <p>A university in Punjab, India</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature_item" id="serviceB">
+            <img src="ruet.jpg" alt="">
+            <h3>RUET</h3>
+            <p>Rajshahi University of Engineering & Technology, commonly known by the acronym RUET, is a public technological university in Rajshahi, Bangladesh. It specializes in the field of applied sciences, engineering, technology, architecture, and urban planning.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature_item" id="serviceC">
+            <img src="RUB.jpg" alt="">
+            <h3>Rabindra University, Bangladesh</h3>
+            <p>Rabindra University, Bangladesh (Bengali: রবীন্দ্র বিশ্ববিদ্যালয় বাংলাদেশ) is a government-funded public university in Bangladesh, established in 2017. Located in Shahjadpur (শাহজাদপুর), Khukni Road, Rabindra kachari bari (রবীন্দ্র কাছারি বাড়ি).</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature_item" id="serviceD">
+            <img src="img/services/s4.png" alt="">
+            <h4>Others</h4>
+            <p>Right now services are not available for others</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your existing footer and other content -->
+
+</body>
+
+</html>
